@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option go_package = "psu";
+
+service Psu {
+    rpc CreateStudent(Person) returns (Student);
+    rpc GetStudentsList(Empty) returns (StudentsList);
+    rpc UpdateStudent(Student) returns (Student);
+    rpc DeleteStudent(StudentID) returns (Empty);
+}
+
+message Person {
+    string name = 1;
+    string surname = 2;
+}
+
+message Student {
+    int32 id = 1;
+    string name = 2;
+    string surname = 3;
+}
+
+message StudentsList {
+    repeated Student students = 1;
+}
+
+message StudentID {
+    int32 id = 1;
+}
+
+message Empty {}
