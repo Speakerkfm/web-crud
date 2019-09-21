@@ -2,20 +2,11 @@
 
 
 [[projects]]
-  digest = "1:ec6f9bf5e274c833c911923c9193867f3f18788c461f76f05f62bb1510e0ae65"
-  name = "github.com/go-sql-driver/mysql"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "72cd26f257d44c1114970e19afddcd812016007e"
-  version = "v1.4.1"
-
-[[projects]]
-  digest = "1:e6da80602f21205cf36f77b895b1580e047ab28a1adbbbb65d9a8e4aecea42fa"
+  digest = "1:a84ca8211571c08591b52703d3b05e15f2c2399233320444617bbcbc89a0f7d0"
   name = "github.com/golang/protobuf"
   packages = [
     "jsonpb",
     "proto",
-    "ptypes/empty",
     "ptypes/struct",
   ]
   pruneopts = "UT"
@@ -39,12 +30,16 @@
   version = "v1.0.0"
 
 [[projects]]
-  digest = "1:ecd9aa82687cf31d1585d4ac61d0ba180e42e8a6182b85bd785fcca8dfeefc1b"
-  name = "github.com/joho/godotenv"
-  packages = ["."]
+  branch = "master"
+  digest = "1:77f84fe652ba4be746bb60668b8e2ab4b9faa9ebdd8cb77f6f3ab2437887f147"
+  name = "github.com/speakerkfm/web-crud"
+  packages = [
+    "pkg/service/serviceiface",
+    "pkg/store",
+    "rpc/psu",
+  ]
   pruneopts = "UT"
-  revision = "23d116af351c84513e1946b527c88823e476be13"
-  version = "v1.3.0"
+  revision = "86c7dd7a0403b95d961c31f6c7890e494ada5a1b"
 
 [[projects]]
   digest = "1:e6a64fc457345cdd841c7a78b20ef76e3b7cbbcac0068428725fe8903d37f5de"
@@ -58,24 +53,16 @@
   revision = "fd9eb15637a0de1559e002f8601ca4f1459e0cd3"
   version = "v5.8.0"
 
-[[projects]]
-  digest = "1:c25289f43ac4a68d88b02245742347c94f1e108c534dda442188015ff80669b3"
-  name = "google.golang.org/appengine"
-  packages = ["cloudsql"]
-  pruneopts = "UT"
-  revision = "5f2a59506353b8d5ba8cbbcd9f3c1f41f1eaf079"
-  version = "v1.6.2"
-
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/go-sql-driver/mysql",
     "github.com/golang/protobuf/jsonpb",
     "github.com/golang/protobuf/proto",
-    "github.com/golang/protobuf/ptypes/empty",
     "github.com/jinzhu/gorm",
-    "github.com/joho/godotenv",
+    "github.com/speakerkfm/web-crud/pkg/service/serviceiface",
+    "github.com/speakerkfm/web-crud/pkg/store",
+    "github.com/speakerkfm/web-crud/rpc/psu",
     "github.com/twitchtv/twirp",
     "github.com/twitchtv/twirp/ctxsetters",
   ]
