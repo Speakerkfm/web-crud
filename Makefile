@@ -7,3 +7,6 @@ server:
 iface:
 	ifacemaker -f pkg/store -s Store -i StoreInterface -p store -o pkg/store/store_interface.go
 	ifacemaker -f pkg/service/student.go -s StudentService -i StudentService -p serviceiface -o pkg/service/serviceiface/studentservice.go
+
+migrations:
+	mysql -u root < migrations/dump.sql
