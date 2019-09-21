@@ -1,11 +1,11 @@
 package main
 
 import (
+	"../../internal/hooks"
+	"../../internal/psuserver"
 	"github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
-	"github.com/speakerkfm/web-crud/internal/hooks"
-	"github.com/speakerkfm/web-crud/internal/psuserver"
 	"github.com/speakerkfm/web-crud/pkg/service"
 	"github.com/speakerkfm/web-crud/pkg/store"
 	"github.com/speakerkfm/web-crud/rpc/psu"
