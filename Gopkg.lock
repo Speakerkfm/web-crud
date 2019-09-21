@@ -30,18 +30,6 @@
   version = "v1.0.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:77f84fe652ba4be746bb60668b8e2ab4b9faa9ebdd8cb77f6f3ab2437887f147"
-  name = "github.com/speakerkfm/web-crud"
-  packages = [
-    "pkg/service/serviceiface",
-    "pkg/store",
-    "rpc/psu",
-  ]
-  pruneopts = "UT"
-  revision = "86c7dd7a0403b95d961c31f6c7890e494ada5a1b"
-
-[[projects]]
   digest = "1:e6a64fc457345cdd841c7a78b20ef76e3b7cbbcac0068428725fe8903d37f5de"
   name = "github.com/twitchtv/twirp"
   packages = [

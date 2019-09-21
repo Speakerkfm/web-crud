@@ -1,8 +1,8 @@
 package main
 
 import (
-	"../../internal/hooks"
-	"../../internal/psuserver"
+	"github.com/Speakerkfm/web-crud/internal/hooks"
+	"github.com/Speakerkfm/web-crud/internal/psuserver"
 	"github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
